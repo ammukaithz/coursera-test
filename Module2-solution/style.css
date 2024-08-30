@@ -1,0 +1,60 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.section h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    background-color: #ccc;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+    .section {
+        width: 30%;
+        float: left;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+    #section1, #section2 {
+        width: 45%;
+        float: left;
+    }
+
+    #section3 {
+        width: 95%;
+        clear: both;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .section {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
